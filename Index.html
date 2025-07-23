@@ -8,53 +8,65 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+        }
+        .navbar {
+            background-color: #ff69b4;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            font-weight: bold;
         }
         .hero {
-            background: linear-gradient(rgba(255, 192, 203, 0.6), rgba(255, 192, 203, 0.6)), url('https://images.unsplash.com/photo-1592878849121-84053d3e41b3') no-repeat center center;
-            background-size: cover;
+            background: linear-gradient(rgba(255, 182, 193, 0.6), rgba(255, 182, 193, 0.6)), url('https://source.unsplash.com/1200x600/?lingerie') center/cover;
             color: #fff;
-            padding: 150px 0;
+            padding: 120px 0;
             text-align: center;
         }
         .hero h1 {
             font-size: 3rem;
-            font-weight: bold;
-        }
-        .hero p {
-            font-size: 1.2rem;
+            font-weight: 700;
         }
         .section-title {
             text-align: center;
+            color: #ff69b4;
             margin-bottom: 40px;
-            color: #d63384;
             font-weight: 600;
         }
         .product-card {
+            transition: transform 0.3s ease;
             border: none;
-            transition: transform 0.3s;
+            border-radius: 10px;
+            overflow: hidden;
         }
         .product-card:hover {
             transform: scale(1.05);
         }
         .testimonial {
-            background-color: #ffe6f0;
-            border-radius: 10px;
+            background-color: #ffe4e1;
+            border-radius: 8px;
             padding: 20px;
+            text-align: center;
         }
         .contact-form {
-            background-color: #f8f9fa;
+            background-color: #fff;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             padding: 30px;
+        }
+        footer {
+            background-color: #ff69b4;
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand fw-bold text-danger" href="#">Bella Bra Lingerie</a>
+            <a class="navbar-brand" href="#">Bella Bra Lingerie</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -73,44 +85,44 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1>Elegance Meets Comfort</h1>
-            <p>Explore our premium collection of nighties, bras, and lingerie.</p>
-            <a href="#products" class="btn btn-danger btn-lg mt-3">Shop Now</a>
+            <h1>Discover Your Elegance</h1>
+            <p>Premium nighties, bras, and lingerie for every woman.</p>
+            <a href="#products" class="btn btn-light btn-lg mt-3">Shop Collection</a>
         </div>
     </section>
 
     <!-- Products Section -->
     <section class="py-5" id="products">
         <div class="container">
-            <h2 class="section-title">Featured Products</h2>
+            <h2 class="section-title">Our Favorites</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card product-card">
-                        <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" class="card-img-top" alt="Bra">
+                        <img src="https://source.unsplash.com/400x400/?bra" class="card-img-top" alt="Bra">
                         <div class="card-body">
-                            <h5 class="card-title">Elegant Lace Bra</h5>
-                            <p class="card-text">Soft and supportive for all-day comfort.</p>
-                            <a href="#" class="btn btn-outline-danger">Buy Now</a>
+                            <h5 class="card-title">Lace Comfort Bra</h5>
+                            <p class="card-text">Soft, elegant, and made for all-day support.</p>
+                            <a href="#" class="btn btn-outline-pink">Buy Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card product-card">
-                        <img src="https://images.unsplash.com/photo-1579684453423-3a8ac9be0c74" class="card-img-top" alt="Nighty">
+                        <img src="https://source.unsplash.com/400x400/?nightwear" class="card-img-top" alt="Nighty">
                         <div class="card-body">
                             <h5 class="card-title">Silk Nighty</h5>
-                            <p class="card-text">Feel luxurious every night with our premium nighty.</p>
-                            <a href="#" class="btn btn-outline-danger">Buy Now</a>
+                            <p class="card-text">Experience luxurious comfort with our silk range.</p>
+                            <a href="#" class="btn btn-outline-pink">Buy Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card product-card">
-                        <img src="https://images.unsplash.com/photo-1603052871121-d8f4d4f516c3" class="card-img-top" alt="Lingerie Set">
+                        <img src="https://source.unsplash.com/400x400/?lingerie" class="card-img-top" alt="Lingerie Set">
                         <div class="card-body">
-                            <h5 class="card-title">Lingerie Set</h5>
-                            <p class="card-text">Beautiful and comfortable, perfect for every occasion.</p>
-                            <a href="#" class="btn btn-outline-danger">Buy Now</a>
+                            <h5 class="card-title">Chic Lingerie Set</h5>
+                            <p class="card-text">Feminine designs crafted for every body shape.</p>
+                            <a href="#" class="btn btn-outline-pink">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -122,31 +134,31 @@
     <section class="py-5 bg-light" id="about">
         <div class="container">
             <h2 class="section-title">About Bella Bra Lingerie</h2>
-            <p class="text-center">At Bella Bra Lingerie, we believe in making women feel confident, comfortable, and stylish. Our premium collection includes everything from elegant bras to luxurious nighties designed to fit every body type.</p>
+            <p class="text-center">Bella Bra Lingerie is a brand designed to inspire confidence and style in every woman. Our collection features high-quality fabrics and elegant designs to help you feel your best every day and night.</p>
         </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="py-5" id="testimonials">
         <div class="container">
-            <h2 class="section-title">What Our Customers Say</h2>
+            <h2 class="section-title">Customer Love</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="testimonial">
-                        <p>"Absolutely love the quality! The bras are so comfortable and stylish. Highly recommended!"</p>
-                        <p class="fw-bold mb-0">- Sarah K.</p>
+                        <p>“The quality is unmatched. I love how comfortable and stylish everything feels.”</p>
+                        <p class="fw-bold mb-0">- Ayesha R.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="testimonial">
-                        <p>"The silk nighty feels so luxurious. It’s my favorite purchase this year!"</p>
-                        <p class="fw-bold mb-0">- Emily R.</p>
+                        <p>“Bella Bra Lingerie made me feel confident and elegant. Absolutely stunning pieces!”</p>
+                        <p class="fw-bold mb-0">- Maria K.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="testimonial">
-                        <p>"Great fit and design. Bella Bra Lingerie has become my go-to store for undergarments."</p>
-                        <p class="fw-bold mb-0">- Aisha M.</p>
+                        <p>“Affordable yet luxurious! I will shop again.”</p>
+                        <p class="fw-bold mb-0">- Sara H.</p>
                     </div>
                 </div>
             </div>
@@ -156,7 +168,7 @@
     <!-- Contact Section -->
     <section class="py-5 bg-light" id="contact">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title">Get in Touch</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="contact-form">
@@ -173,7 +185,7 @@
                                 <label for="message" class="form-label">Message</label>
                                 <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-danger w-100">Send Message</button>
+                            <button type="submit" class="btn btn-pink w-100">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -182,7 +194,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-3 bg-dark text-light text-center">
+    <footer class="py-3 text-center">
         <div class="container">
             <p class="mb-0">&copy; 2025 Bella Bra Lingerie. All rights reserved.</p>
         </div>
